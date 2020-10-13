@@ -21,4 +21,4 @@ def setRGB(num, r, g, b):
 
 bus.write_byte_data(addr, rgb_off_reg, 0x00)
 time.sleep(1)
-setRGB(Max_LED, 0, 0, 255)
+setRGB(Max_LED, 255, 255, 0)
