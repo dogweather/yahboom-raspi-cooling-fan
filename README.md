@@ -6,8 +6,7 @@ Intelligent Temperature Control":
 
 ![HAT Image](yahboom-rgb-pi-hat.jpg)
 
-This code has been tested on Raspberry Pi
-OS 32-bit.
+Tested on Raspberry Pi OS 32-bit.
 
 How to run the Python code
 --------------------------
