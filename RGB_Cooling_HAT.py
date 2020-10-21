@@ -94,12 +94,16 @@ def getCPULoadRate():
     return "CPU:"+str(usageRate)+"%"
 
 
+def run(cmd: str) -> str:
+    return subprocess.check_output(cmd, shell=True, text=True)
+
+
 def setOLEDshow():
     # Draw a black filled box to clear the image.
     draw.rectangle((0,0,width,height), outline=0, fill=0)
 
     #cmd = "top -bn1 | grep load | awk '{printf \"CPU:%.0f%%\", $(NF-2)*100}'"
-    #CPU = subprocess.check_output(cmd, shell=True, text=True)
+    #CPU = run(cmd)
     CPU = getCPULoadRate()
 
     cmd = os.popen('vcgencmd measure_temp').readline()
@@ -108,13 +112,13 @@ def setOLEDshow():
     g_temp = float(cmd.replace("temp=","").replace("'C\n",""))
 
     cmd = "free -m | awk 'NR==2{printf \"RAM:%s/%s MB\", $2-$3,$2}'"
-    MemUsage = subprocess.check_output(cmd, shell=True, text=True)
+    MemUsage = run(cmd)
 
     cmd = "df -h | awk '$NF==\"/\"{printf \"Disk:%d/%dMB\", ($2-$3)*1024,$2*1024}'"
-    Disk = subprocess.check_output(cmd, shell=True, text=True)
+    Disk = run(cmd)
 
     cmd = "hostname -I | cut -d\' \' -f1"
-    IP = subprocess.check_output(cmd, shell = True, text=True)
+    IP = run(cmd)
 
     # Write two lines of text.
 
