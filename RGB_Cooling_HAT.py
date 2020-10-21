@@ -99,7 +99,7 @@ def setOLEDshow():
     draw.rectangle((0,0,width,height), outline=0, fill=0)
 
     #cmd = "top -bn1 | grep load | awk '{printf \"CPU:%.0f%%\", $(NF-2)*100}'"
-    #CPU = subprocess.check_output(cmd, shell = True)
+    #CPU = subprocess.check_output(cmd, shell=True, text=True)
     CPU = getCPULoadRate()
 
     cmd = os.popen('vcgencmd measure_temp').readline()
