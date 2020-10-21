@@ -12,13 +12,17 @@ Raspberry Pi OS 32-bit.
 How to run the Python code
 --------------------------
 
-**Install Python 3 Packages**
+**1. Enable I2C**
+
+Use, for example, the `raspi-config` command line tool.
+
+**2. Install Python 3 Packages**
 
 ```bash
 sudo pip3 install Adafruit_BBIO Adafruit-SSD1306
 ```
 
-**Run one or more of the Python scripts**
+**3. Run one or more of the Python scripts**
 
 For example, if you want the Fan, RGB, and OLED all controlled
 by temperature and the Pi's stats, then in three separate terminal
@@ -43,6 +47,14 @@ to root's crontab with `sudo crontab -e`:
 
 ```
 @reboot /usr/bin/python3 /home/pi/src/yahboom-raspi-cooling-fan/RGB_Cooling_HAT.py
+```
+
+Multiple `@reboot` lines can be given, e.g., I'm currently running these two so that
+the lights simply stay default green and aren't changed:
+
+```
+@reboot /usr/bin/python3 /home/pi/src/yahboom-raspi-cooling-fan/fan_temp.py
+@reboot /usr/bin/python3 /home/pi/src/yahboom-raspi-cooling-fan/oled.py
 ```
 
 See Also
