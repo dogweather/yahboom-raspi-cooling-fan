@@ -37,3 +37,12 @@ python rgb_temp.py
 ```bash
 python oled.py
 ```
+
+**Starting a script automatically when booting**
+
+This easiest way I've found so far is to add, e.g., this line
+to root's crontab with `sudo crontab -e`:
+
+```
+@reboot /usr/bin/python /home/pi/src/yahboom-raspi-cooling-fan/RGB_Cooling_HAT.py
+```
