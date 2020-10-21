@@ -107,14 +107,14 @@ def setOLEDshow():
     global g_temp
     g_temp = float(cmd.replace("temp=","").replace("'C\n",""))
 
-    cmd = "free -m | awk 'NR==2{printf \"RAM:%s/%s MB \", $2-$3,$2}'"
-    MemUsage = subprocess.check_output(cmd, shell = True)
+    cmd = "free -m | awk 'NR==2{printf \"RAM:%s/%s MB\", $2-$3,$2}'"
+    MemUsage = subprocess.check_output(cmd, shell=True, text=True)
 
     cmd = "df -h | awk '$NF==\"/\"{printf \"Disk:%d/%dMB\", ($2-$3)*1024,$2*1024}'"
-    Disk = subprocess.check_output(cmd, shell = True)
+    Disk = subprocess.check_output(cmd, shell=True, text=True)
 
     cmd = "hostname -I | cut -d\' \' -f1"
-    IP = subprocess.check_output(cmd, shell = True)
+    IP = subprocess.check_output(cmd, shell = True, text=True)
 
     # Write two lines of text.
 
