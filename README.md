@@ -14,9 +14,9 @@ How to run the Python code
 
 **1. Enable I2C**
 
-Use, for example, the `raspi-config` command line tool.
+Use, for example, the [raspi-config](https://www.raspberrypi.org/documentation/configuration/raspi-config.md) command line tool.
 
-**2. Install Python 3 Packages**
+**2. Install Python3 Packages**
 
 ```bash
 sudo pip3 install Adafruit_BBIO Adafruit-SSD1306
