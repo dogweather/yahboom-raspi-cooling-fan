@@ -46,3 +46,8 @@ to root's crontab with `sudo crontab -e`:
 ```
 @reboot /usr/bin/python /home/pi/src/yahboom-raspi-cooling-fan/RGB_Cooling_HAT.py
 ```
+
+See Also
+--------
+
+* [Mini OLED info at Adafruit](https://learn.adafruit.com/adafruit-pioled-128x32-mini-oled-for-raspberry-pi/usage)
