@@ -49,7 +49,7 @@ to root's crontab with `sudo crontab -e`:
 @reboot /usr/bin/python3 /home/pi/src/yahboom-raspi-cooling-fan/RGB_Cooling_HAT.py
 ```
 
-Multiple `@reboot` lines can be given, e.g., I'm currently running these two so that
+Multiple `@reboot` lines can be given. E.g., I'm currently running these two so that
 the lights simply stay default green and aren't changed:
 
 ```
