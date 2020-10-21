@@ -51,3 +51,4 @@ See Also
 --------
 
 * [Mini OLED info at Adafruit](https://learn.adafruit.com/adafruit-pioled-128x32-mini-oled-for-raspberry-pi/usage)
+* [Yahboom's instructions](https://www.yahboom.net/study/RGB_Cooling_HAT)
