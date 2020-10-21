@@ -1,10 +1,12 @@
 yahboom-raspi-cooling-fan
 =========================
 
+Crowd-sourced code for the "Yahboom Raspberry Pi Cooling HAT with
+Intelligent Temperature Control": 
+
 ![HAT Image](yahboom-rgb-pi-hat.jpg)
 
-Crowd-sourced code for the "Yahboom Raspberry Pi Cooling HAT with
-Intelligent Temperature Control". It's been tested on Raspberry Pi
+This code has been tested on Raspberry Pi
 OS 32-bit.
 
 How to run the Python code
