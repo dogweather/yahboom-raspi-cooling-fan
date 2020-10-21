@@ -6,17 +6,16 @@ Intelligent Temperature Control":
 
 ![HAT Image](yahboom-rgb-pi-hat.jpg)
 
-Tested on Raspberry Pi OS 32-bit.
+This repo's code has been converted to Python 3 and tested on
+Raspberry Pi OS 32-bit.
 
 How to run the Python code
 --------------------------
 
-The code, as written by Yahboom, is for Python 2.
-
-**Install Python 2 Packages**
+**Install Python 3 Packages**
 
 ```bash
-sudo pip install Adafruit_BBIO Adafruit-SSD1306
+sudo pip3 install Adafruit_BBIO Adafruit-SSD1306
 ```
 
 **Run one or more of the Python scripts**
@@ -26,15 +25,15 @@ by temperature and the Pi's stats, then in three separate terminal
 windows, run:
 
 ```bash
-python fan_temp.py
+python3 fan_temp.py
 ```
 
 ```bash
-python rgb_temp.py
+python3 rgb_temp.py
 ```
 
 ```bash
-python oled.py
+python3 oled.py
 ```
 
 **Starting a script automatically when booting**
@@ -43,7 +42,7 @@ This easiest way I've found so far is to add, e.g., this line
 to root's crontab with `sudo crontab -e`:
 
 ```
-@reboot /usr/bin/python /home/pi/src/yahboom-raspi-cooling-fan/RGB_Cooling_HAT.py
+@reboot /usr/bin/python3 /home/pi/src/yahboom-raspi-cooling-fan/RGB_Cooling_HAT.py
 ```
 
 See Also
