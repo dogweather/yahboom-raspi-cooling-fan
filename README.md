@@ -6,7 +6,7 @@ Intelligent Temperature Control":
 
 ![HAT Image](yahboom-rgb-pi-hat.jpg)
 
-This repo's code has been converted to Python 3 and tested on
+I converted the code to Python 3 and tested it on
 Raspberry Pi OS 32-bit.
 
 How to run the Python code
