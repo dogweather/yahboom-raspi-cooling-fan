@@ -94,7 +94,7 @@ def getCPULoadRate():
     return "CPU:"+str(usageRate)+"%"
 
 
-def run(cmd: str) -> str:
+def run(cmd):  #str
     return subprocess.check_output(cmd, shell=True, text=True)
 
 
