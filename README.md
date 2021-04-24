@@ -7,8 +7,8 @@ Intelligent Temperature Control":
 ![HAT Image](yahboom-rgb-pi-hat.jpg)
 
 I converted the code to Python 3 and tested it on
-Raspberry Pi OS 32-bit. [attenzione](https://github.com/attenzione) tested it
-successfully on Ubuntu 64-bit and his notes are below.
+**Raspberry Pi OS 32-bit**. [attenzione](https://github.com/attenzione) tested it
+successfully on **Ubuntu 64-bit** and his notes are below.
 
 
 How to run the Python code
