@@ -7,7 +7,9 @@ Intelligent Temperature Control":
 ![HAT Image](yahboom-rgb-pi-hat.jpg)
 
 I converted the code to Python 3 and tested it on
-Raspberry Pi OS 32-bit.
+Raspberry Pi OS 32-bit. [attenzione](https://github.com/attenzione) tested it
+successfully on Ubuntu 64-bit and his notes are below.
+
 
 How to run the Python code
 --------------------------
@@ -18,8 +20,17 @@ Use, for example, the [raspi-config](https://www.raspberrypi.org/documentation/c
 
 **2. Install Python3 Packages**
 
+**Raspberry Pi OS 32-bit**
+
 ```bash
 sudo pip3 install Adafruit_BBIO Adafruit-SSD1306
+```
+
+**Ubuntu 64-bit**
+
+```bash
+sudo apt install -y python3-smbus python3-pip python3-rpi.gpio i2c-tools libraspberrypi-bin
+sudo pip3 install Adafruit-SSD1306 Pillow
 ```
 
 **3. Run one or more of the Python scripts**
