@@ -51,7 +51,7 @@ python3 oled.py
 
 ### Starting a script automatically when booting
 
-This easiest way I've found so far is to add, e.g., this line
+This easiest way I've found so far is to add a line
 to root's crontab with `sudo crontab -e`:
 
 ```
