@@ -1,5 +1,4 @@
-yahboom-raspi-cooling-fan
-=========================
+# yahboom-raspi-cooling-fan
 
 Crowd-sourced code for the "Yahboom Raspberry Pi Cooling HAT with
 Intelligent Temperature Control": 
@@ -11,8 +10,7 @@ I converted the code to Python 3 and tested it on
 successfully on **Ubuntu 64-bit** and his notes are incorporated below.
 
 
-How to run the Python code
---------------------------
+## How to run the Python code
 
 **1. Enable I2C**
 
@@ -20,13 +18,13 @@ Use, for example, the [raspi-config](https://www.raspberrypi.org/documentation/c
 
 **2. Install Python3 Packages**
 
-**Raspberry Pi OS 32-bit**
+### Raspberry Pi OS 32-bit
 
 ```bash
 sudo pip3 install Adafruit_BBIO Adafruit-SSD1306
 ```
 
-**Ubuntu 64-bit**
+### Ubuntu 64-bit
 
 ```bash
 sudo apt install -y python3-smbus python3-pip python3-rpi.gpio i2c-tools libraspberrypi-bin
@@ -51,7 +49,7 @@ python3 rgb_temp.py
 python3 oled.py
 ```
 
-**Starting a script automatically when booting**
+### Starting a script automatically when booting
 
 This easiest way I've found so far is to add, e.g., this line
 to root's crontab with `sudo crontab -e`:
